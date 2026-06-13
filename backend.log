@@ -1,0 +1,8 @@
+[31m⚠️  Warning: You are using the experimental Python version of this project.[0m
+[33mThis version is unstable and may break frequently. Please switch to the Rust rewrite for reliability! The rust version is an early release so it might still have some issues. https://github.com/frederik-uni/manga-image-translator-rust[0m
+INFO:     Started server process [44560]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:50979 - "POST /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51861 - "POST /api/translate?use_gpu=True HTTP/1.1" 500 Internal Server Error

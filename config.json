@@ -1,0 +1,16 @@
+{
+  "translator": {
+    "translator": "baidu",
+    "target_lang": "CHS"
+  },
+  "detector": {
+    "detector": "default",
+    "detection_size": 2048
+  },
+  "ocr": {
+    "ocr": "48px"
+  },
+  "inpainter": {
+    "inpainter": "lama_large"
+  }
+}

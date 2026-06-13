@@ -1,0 +1,156 @@
+/* Manga Translator - 扁平化样式表 */
+
+/* 全局样式 */
+QWidget {
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+    font-size: 10pt;
+    color: #333333;
+}
+
+QMainWindow {
+    background-color: #f5f5f5;
+}
+
+/* 按钮样式 */
+QPushButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #45a049;
+}
+
+QPushButton:pressed {
+    background-color: #3d8b40;
+}
+
+QPushButton:disabled {
+    background-color: #cccccc;
+    color: #666666;
+}
+
+QPushButton#settings_btn {
+    background-color: #2196F3;
+}
+
+QPushButton#settings_btn:hover {
+    background-color: #1976D2;
+}
+
+QPushButton#save_btn {
+    background-color: #FF9800;
+}
+
+QPushButton#save_btn:hover {
+    background-color: #F57C00;
+}
+
+/* 分组框样式 */
+QGroupBox {
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    margin-top: 12px;
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 4px 8px;
+    color: #333333;
+}
+
+/* 标签样式 */
+QLabel {
+    color: #333333;
+}
+
+/* 进度条样式 */
+QProgressBar {
+    border: 2px solid #d0d0d0;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    text-align: center;
+    color: #333333;
+    font-weight: bold;
+}
+
+QProgressBar::chunk {
+    background-color: #4CAF50;
+    border-radius: 2px;
+}
+
+/* 文本编辑框样式 */
+QTextEdit {
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    padding: 6px;
+    color: #333333;
+}
+
+/* 输入框样式 */
+QLineEdit {
+    background-color: #ffffff;
+    border: 2px solid #d0d0d0;
+    border-radius: 4px;
+    padding: 6px;
+    color: #333333;
+}
+
+QLineEdit:focus {
+    border: 2px solid #2196F3;
+}
+
+/* 对话框样式 */
+QDialog {
+    background-color: #f5f5f5;
+}
+
+/* 对话框按钮 */
+QDialogButtonBox QPushButton {
+    min-width: 80px;
+    min-height: 28px;
+}
+
+/* 滚动条样式 */
+QScrollBar:vertical {
+    border: none;
+    background-color: #f0f0f0;
+    width: 12px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #c0c0c0;
+    min-height: 30px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #a0a0a0;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+    height: 0px;
+}
+
+/* 消息框样式 */
+QMessageBox {
+    background-color: #ffffff;
+}
+
+QMessageBox QPushButton {
+    min-width: 80px;
+    min-height: 32px;
+}

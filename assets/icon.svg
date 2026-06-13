@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5b7dff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7b9dff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="40" fill="url(#grad)"/>
+  <rect x="30" y="50" width="140" height="100" rx="8" fill="white" opacity="0.9"/>
+  <text x="100" y="90" font-family="Arial" font-size="32" font-weight="bold" fill="#5b7dff" text-anchor="middle">日→中</text>
+  <path d="M 60 120 L 80 120 M 60 135 L 100 135" stroke="#5b7dff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 110 120 L 140 120 M 110 135 L 140 135" stroke="#5b7dff" stroke-width="3" stroke-linecap="round"/>
+</svg>
