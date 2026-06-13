@@ -6,20 +6,13 @@ Translator Wrapper Module
 """
 
 import os
-import sys
 import asyncio
 import json
 from pathlib import Path
 from typing import Optional, Tuple
 
-# 添加 manga-image-translator 到 Python 路径
-MANGA_TRANSLATOR_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "manga-image-translator")
-if MANGA_TRANSLATOR_PATH not in sys.path:
-    sys.path.insert(0, MANGA_TRANSLATOR_PATH)
-
 from manga_translator import Config
-# 注意：不在这里导入 MangaTranslatorLocal，而是在设置环境变量后动态导入
-# from manga_translator.mode.local import MangaTranslatorLocal
+from manga_translator.mode.local import MangaTranslatorLocal
 
 
 class TranslatorWrapper:
@@ -46,7 +39,7 @@ class TranslatorWrapper:
         if baidu_secret:
             os.environ["BAIDU_SECRET_KEY"] = baidu_secret
 
-        self.result_dir = os.path.join(MANGA_TRANSLATOR_PATH, "result")
+        self.result_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "result")
         os.makedirs(self.result_dir, exist_ok=True)
 
         # 进度回调
@@ -109,9 +102,6 @@ class TranslatorWrapper:
                 return False, "", "未配置百度翻译 API 密钥，请在设置中配置"
 
             self._safe_status_update("正在初始化翻译器...")
-
-            # 导入 MangaTranslatorLocal（环境变量已在应用启动时设置）
-            from manga_translator.mode.local import MangaTranslatorLocal
 
             # 准备参数（完全按照原项目的argparse参数）
             params = {

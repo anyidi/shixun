@@ -1,3 +1,4 @@
+manga-image-translator
 fastapi==0.115.0
 uvicorn==0.32.0
 requests==2.32.3
